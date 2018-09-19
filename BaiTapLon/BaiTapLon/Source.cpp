@@ -20,6 +20,18 @@ void xuat(int a[100][100], int d, int c) {
 	}
 }
 
+int xep(int a[100][100], int d, int c) { // tìm phần tử lớn nhất trong hàng  
+
+	int max = 0;
+	for (int i = 0; i < c; i++) {
+		if (max < a[0][i]) {
+			max = a[0][i];
+		}
+	}
+	return max;
+
+}
+
 int main()
 {
 	int a[100][100];
